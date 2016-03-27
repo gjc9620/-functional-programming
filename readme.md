@@ -1,2 +1,2 @@
 ### learn functional programming in javascipt 
-### some demo && note
+### some demo && note   
