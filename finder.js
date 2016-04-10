@@ -6,5 +6,5 @@
 	})
   };
   
-  var a = finder(function(a){ return a}, Math.max, [1,2,66,4,5])
-  console.log(a);
+  // var a = finder(function(a){ return a}, Math.max, [1,2,66,4,5])
+  // console.log(a);
