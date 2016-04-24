@@ -16,6 +16,10 @@ function checker() {
   }
 }
 
+module.exports = checker;
+
+
+
 // var ch  = function (v) {
 //   var ee =  v[0] !== 1;
 //   console.log(ee)
