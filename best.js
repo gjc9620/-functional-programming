@@ -4,6 +4,6 @@ function best(coll, rule){
     })
 }
 
-console.log(best([44,2,4,2,1,333], function (x, y) {
-    return x > y
-}))
+// console.log(best([44,2,4,2,1,333], function (x, y) {
+//     return x > y
+// }))//333
