@@ -8,9 +8,9 @@ var rest = require("./myLib/rest");
 function andify(){
 	var preds = toArray(arguments);
 	return function (){
-		var args = toArray(arguments);
+		var args = toArray(arguments); //123
 		var everything = function(ps, truth){
-			console.log(ps);
+			console.log(ps, truth);
 			if(ps.length===0){
 				return truth
 			}else {
