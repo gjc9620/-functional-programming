@@ -1,9 +1,15 @@
 /**
+ *
  * Created by gujiacheng on 16/6/13.
  */
-function summRec(arr){
-	if(arr.length === 1){ return arr[0]}
-  return arr[0] + summRec(arr.shift() && arr)
+var first = require("./myLib/first"),
+	rest = require("./myLib/rest");
+
+
+
+function summRec(arr, seed){
+	if(arr.length === 0){ return seed}
+  return summRec( rest(arr), first(arr)+ seed)
 }
 
-console.log( summRec([55,66,77,88]) );
+console.log( summRec([55,66,77,88], 3) );

@@ -3,7 +3,7 @@
  * Created by gujiacheng on 16/6/8.
  */
 var existy = require("./myLib/existy"),
-    isObject = require("./myLib/existy");
+    isObject = require("./myLib/isObject");
 
 function deepClone(obj){
 	if(!existy(obj) || !isObject(obj)){
