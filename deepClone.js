@@ -10,8 +10,10 @@ function deepClone(obj){
 		return obj;
 	}
 	var temp = new obj.constructor();
-	for(var key in obj){
-		temp[key] = obj[key]
+	for (var key in obj){
+		if(obj.hasOwnProperty(key)){
+			temp[key] = obj[key]
+		}
 	}
 	return temp;
 }
