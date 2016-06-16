@@ -24,7 +24,16 @@ Lazychain.prototype.forse = function(){
 	},this._target)
 };
 
-var l1 = new Lazychain([2,3,1]);
-l1.invoke("sort", (a, b)=>b>a )
-  .invoke("map", v=>v*2 );
-console.log(l1.forse())
+//var l1 = new Lazychain([2,3,1]);
+//l1.invoke("sort", (a, b)=>b>a )
+//  .invoke("map", v=>v*2 );
+//console.log(l1.forse())
+
+function LazyChainChainChain (obj){
+	var isLc = obj instanceof Lazychain;
+  this._calls = isLc ? obj._calls.concat([]) : [];
+	this._target = isLc ? obj._target : obj;
+}
+
+//var l2  = LazyChainChainChain({});
+//l2.
